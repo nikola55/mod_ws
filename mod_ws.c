@@ -8,15 +8,15 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-    
+
     static void register_hooks(apr_pool_t *pool);
     static int ws_handler(request_rec *r);
-    
+
 #ifdef __cplusplus
 }
 #endif
 
-module AP_MODULE_DECLARE_DATA ws_module ={
+module AP_MODULE_DECLARE_DATA ws_module = {
     STANDARD20_MODULE_STUFF,
     NULL, // Per-directory configuration handler
     NULL, // Merge handler for per-directory configurations
